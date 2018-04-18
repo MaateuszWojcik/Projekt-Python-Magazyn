@@ -1,27 +1,22 @@
 create database Magazyn;
+use Magazyn;
+#drop database Magazyn;
 
--- drop table Kaski;
--- drop table Pady;
--- drop table Spodnie;
--- drop table Firmy;
--- drop table Buty;
--- drop table Pilki;
-
-select * from Kaski;
-select * from Pady;
-select * from Spodnie;
-select * from Firmy;
-select * from Buty;
-select * from Pilki;
+#drop table Kaski;
+#drop table Pady;
+#drop table Spodnie;
+#drop table Firmy;
+#drop table Buty;
+#drop table Pilki;
 
 CREATE TABLE logowanie (
     login VARCHAR(10),
     passwd VARCHAR(10)
 );
-drop table logowanie;
-INSERT INTO logowanie values('qwe','zxc');
-select * from logowanie where login = 'qwe' and passwd='zxc';
-
+#drop table logowanie;
+INSERT INTO logowanie values('admin','admin');
+INSERT INTO logowanie values('user','user');
+select * from logowanie;
 
 create table Kaski (
 id_k int primary key not null auto_increment,
@@ -32,7 +27,6 @@ klasa_ochrony_glowy TEXT,
 firma_k TEXT,
 cena_k_$ float
 );
-select* from kaski;
 INSERT INTO Kaski VALUES(1,10,'Air XP Pro VTD II','L','V','SCHUTT',199.99);
 INSERT INTO Kaski VALUES(2,20,'Vengeance VTD II','L','V','SCHUTT','254.99');
 INSERT INTO Kaski VALUES(3,30,'Speedflex','L','V','RIDDELL','399.99');
@@ -243,12 +237,9 @@ firma_o varchar(10) not null,
 cena_o float
 );
 
-
-
-
-
-
-
-
-
-
+select * from Kaski;
+select * from Pady;
+select * from Spodnie;
+select * from Firmy;
+select * from Buty;
+select * from Pilki;
