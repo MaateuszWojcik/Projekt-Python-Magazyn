@@ -1,11 +1,11 @@
-create database Porównywarka;
+create database Magazyn;
 
-drop table Kaski;
-drop table Pady;
-drop table Spodnie;
-drop table Firmy;
-drop table Buty;
-drop table Pilki;
+-- drop table Kaski;
+-- drop table Pady;
+-- drop table Spodnie;
+-- drop table Firmy;
+-- drop table Buty;
+-- drop table Pilki;
 
 select * from Kaski;
 select * from Pady;
