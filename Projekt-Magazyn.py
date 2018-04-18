@@ -1,4 +1,3 @@
-
 #Zaimportuj bibliotekę pymysql
 import pymysql
 import currencylayer
@@ -8,8 +7,8 @@ class DBConnect:
     def __init__(self):
         try:
             #pymysql.connect do uzupełnienia wedle wlasnych danych z MySQl Workbench
-            self.conn = pymysql.connect(AccesKey.host,AccesKey.login,AccesKey.passwd,'Porównywarka', charset='utf8')
-            print('Witaj!')
+            self.conn = pymysql.connect(AccesKey.host,AccesKey.login,AccesKey.passwd,'Magazyn', charset='utf8')
+            print('Witaj w magazynie sprzętu do futbolu amerykańskiego!')
             self.logowanie()
         except:
             print('błędne dane logowania!')
